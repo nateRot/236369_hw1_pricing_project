@@ -44,3 +44,10 @@ export const fillPricingCycle = (index) => {
 
 fillPricingCycle(plan_index);
 
+function setPricingHrefs() {
+  document.getElementById("payment-cycle-monthly-href").href='./checkout_form.html'
+  document.getElementById("payment-cycle-yearly-href").href='./checkout_form.html'
+}
+
+setPricingHrefs()
+

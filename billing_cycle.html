@@ -9,11 +9,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TeamTaub Gaming Plans</title>
-  
+
   <meta name="description" content="Basic Pricing page for university project">
   <meta name="author" content="cs236369">
-  <meta name="keywords" content="HTML5, HTML"> 
-  <link rel="stylesheet" href="css/styles.css"> 
+  <meta name="keywords" content="HTML5, HTML">
+  <link rel="stylesheet" href="css/billing_cycle.css">
 
 </head>
 
@@ -23,13 +23,17 @@
   <p id="new-header" style="font-size: 30px;"></p>
   Now select the payment cycle
   <!-- Main Content -->
-  <div class="cycle-box" style="display: flex">
-    <div>
-      <button type="button" id="monthly-button"></button>
+  <div class="pricing">
+    <div class="payment-cycle">
+      <h2>Monthly</h2>
+      <p><span id="payment-cycle-monthly"></span></p>
+      <a id="payment-cycle-monthly-href" "href="#">Sign up</a>
     </div>
-    <div>
-      <button type="button" id="yearly-button"></button>
-      <p style="text-align: center">Best Value!</p>
+
+    <div class="payment-cycle">
+      <h2>Yearly</h2>
+      <p><span id="payment-cycle-yearly"></span> / month</p>
+      <a id="payment-cycle-yearly-href" href="#">Checkout!</a>
     </div>
   </div>
 
