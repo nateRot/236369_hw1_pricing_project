@@ -2,7 +2,7 @@ import { plansList } from './data.js'
 
 const params = new URLSearchParams(window.location.search)
 let value = params.get('plan_num')
-console.log(value)
+// console.log(value)
 
 const newHeader = document.getElementById('new-header')
 newHeader.innerHTML = 'You chose plan ' + (parseInt(value, 10) + 1)
@@ -14,7 +14,7 @@ const createMonthlycont = () => {
         'Monthly - ' + plansList[value].monthlySubPrice + '$'
 
     monthlyButton.onclick = () => {
-        window.location.href = './checkout_form.html'
+        window.location.href = './checkout_form.html?plan_num=' + value
     }
 }
 
@@ -24,7 +24,7 @@ const createYearlycont = () => {
         'Yearly - ' + plansList[value].yearlySubPrice + '$/month'
 
     yearlyButton.onclick = () => {
-        window.location.href = './checkout_form.html'
+        window.location.href = './checkout_form.html?plan_num=' + value
     }
 }
 

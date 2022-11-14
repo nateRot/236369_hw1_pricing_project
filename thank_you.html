@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<div class="stage">
+  Step 4
+</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamTaub Gaming Plans</title>
+  
+  <meta name="description" content="Basic Pricing page for university project">
+  <meta name="author" content="cs236369">
+  <meta name="keywords" content="HTML5, HTML"> 
+  <link rel="stylesheet" href="css/styles.css"> 
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+      
+      <!-- Header Content -->
+        <h1 class="header"> TeamTaub Gaming Plans </h1>
+        <div style="text-align: center">
+            <h2 id="tyhead" style="text-align: center">Thank you for purchasing</h2>
+            <h2 id="plantype"></h2>
+        </div>
+        <script>
+            const params = new URLSearchParams(window.location.search)
+            let value = params.get('plan_num')
+            const tyhead = document.getElementById('plantype')
+            tyhead.innerHTML = 'plan ' + value
+        </script>
+      
+    
+    </div>

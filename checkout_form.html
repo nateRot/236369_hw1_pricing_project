@@ -20,22 +20,33 @@
 <body>
     <!-- Header Content -->
     <h1 class="header"> TeamTaub Gaming Plans </h1>
+    <script src="js/checkout_form.js" type="module"></script>
 
-    <script>
+    <form id="creditForm">
+        <label for="fname">CC Number:</label><br>
+        <input autocomplete="off" type="text" id="ccnum" name="ccnum"><br>
+        <label for="fname">Name:</label><br>
+        <input autocomplete="off" type="text" id="fname" name="fname"><br>
+        <label for="fname">CW:</label><br>
+        <input autocomplete="off" placeholder="***" type="text" id="CW" name="CW"><br>
+        <div class="exp-wrapper">
+            <input autocomplete="off" class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" data-pattern-validate />
+            <input autocomplete="off" class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
+          </div>
+        <input type="button" value="Submit" id="submitButton">
+        <script>
+
+        </script>
+    </form>
+    <!-- <script>
+        const fname = document.getElementById("fname").value
+        console.log(fname)
         function checkValidity(){
             alert('my alert')
-            const fname = document.getElementById('fname')
+            const fname = document.getElementById('fname').value
             console.log(fname)
         }
-    </script>
-
-    <form onsubmit="return checkValidity()">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-        <input type="submit" value="Submit">
-    </form>
+    </script> -->
   
     
     <!-- <script src="js/checkout_form.js" type="module"></script> -->
