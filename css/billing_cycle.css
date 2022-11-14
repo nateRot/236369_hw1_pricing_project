@@ -1,7 +1,7 @@
 .pricing {
   display: flex;
   justify-content: space-between;
-  max-width: 500px;
+  max-width: 30%;
   margin: auto;
 }
 .payment-cycle {
@@ -21,6 +21,7 @@
 
 .payment-cycle h2 {
   margin-top: 0;
+
   padding-bottom: 10px;
   border-bottom: 2px solid #e30046;
   text-transform: uppercase;
@@ -28,32 +29,23 @@
 }
 .payment-cycle p {
   margin-top: 0;
+  margin-bottom: 20px;
+
+
 }
 .payment-cycle p span {
   font-size: 33px;
+  text-align: right;
+  margin: auto;
+
+
 }
-.payment-cycle ul {
-  margin: 0 0 35px;
-  padding-left: 16px;
-  list-style: none;
-  line-height: 1.8;
-  color: #b5b5b5;
-}
-.payment-cycle ul li::before {
-  content: "•";
-  color: #e30046;
-  display: inline-block;
-  width: 20px;
-  margin-left: -15px;
-  position: relative;
-  top: 4px;
-  font-size: 26px;
-  line-height: 0;
-}
+
+
 .payment-cycle a {
   text-decoration: none;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-align: center;
   background: #e30046;
   border: 2px solid #e30046;
@@ -62,7 +54,11 @@
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
+  margin: auto;
+
 }
 .payment-cycle a:hover {
   background-color: #1f262c;
+  margin: auto;
+
 }
