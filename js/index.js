@@ -12,6 +12,7 @@ const selectPlan = (planSelected) => {
 const generateTable = () => {
     // creates a <table> element and a <tbody> element
     const tbl = document.createElement('table')
+    tbl.setAttribute('class', 'styled-table')
     const tblBody = document.createElement('tbody')
 
     //create table header
@@ -31,7 +32,7 @@ const generateTable = () => {
         const row = document.createElement('tr')
         // row.setAttribute('scope', 'col')
         const feature_row = document.createElement('th')
-        feature_row.setAttribute('scope', 'col')
+        // feature_row.setAttribute('scope', 'col')
         if (i != 0) {
             const featureText = document.createTextNode(table_rows[i])
             feature_row.appendChild(featureText)
@@ -57,7 +58,11 @@ const generateTable = () => {
                     window.location.href = './billing_cycle.html?plan_num=' + j
                 }
                 planButton.innerHTML = plansList[j]['yearlySubPrice'] + '$'
-                planButton.setAttribute('class', 'btn-silver')
+                if (j == plansList.length - 1) {
+                    planButton.setAttribute('class', 'btn-gold')
+                } else {
+                    planButton.setAttribute('class', 'btn-silver')
+                }
                 cell.appendChild(planButton)
             }
             row.appendChild(cell)
@@ -70,7 +75,9 @@ const generateTable = () => {
     // put the <tbody> in the <table>
     tbl.appendChild(tblBody)
     // appends <table> into <body>
-    document.body.appendChild(tbl)
+    const grid_elem = document.getElementById('grid_id')
+    grid_elem.appendChild(tbl)
+    // document.body.appendChild(tbl)
 }
 
 generateTable()

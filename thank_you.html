@@ -30,7 +30,7 @@
             const params = new URLSearchParams(window.location.search)
             let value = params.get('plan_num')
             const tyhead = document.getElementById('plantype')
-            tyhead.innerHTML = 'plan ' + value
+            tyhead.innerHTML = 'plan ' + (parseInt(value) + 1)
         </script>
       
     

@@ -18,38 +18,29 @@
 </head>
 
 <body>
+  <div id="grid_id" class="grid-container">
     <!-- Header Content -->
     <h1 class="header"> TeamTaub Gaming Plans </h1>
     <script src="js/checkout_form.js" type="module"></script>
 
     <form id="creditForm">
         <label for="fname">CC Number:</label><br>
-        <input autocomplete="off" type="text" id="ccnum" name="ccnum"><br>
+        <input autocomplete="off" type="text" id="ccnum" name="ccnum" class="rounded-input"><br>
         <label for="fname">Name:</label><br>
-        <input autocomplete="off" type="text" id="fname" name="fname"><br>
+        <input autocomplete="off" type="text" id="fname" name="fname" class="rounded-input"><br>
         <label for="fname">CW:</label><br>
-        <input autocomplete="off" placeholder="***" type="text" id="CW" name="CW"><br>
+        <input autocomplete="off" placeholder="***" type="text" id="CW" name="CW" class="rounded-input"><br>
         <div class="exp-wrapper">
-            <input autocomplete="off" class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" data-pattern-validate />
-            <input autocomplete="off" class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
+            <label for="fname">Expiration:</label><br>
+            <input class="rounded-input" autocomplete="off" class="exp" id="month" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="MM" type="text" data-pattern-validate />
+            <input class="rounded-input" autocomplete="off" class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
           </div>
         <input type="button" value="Submit" id="submitButton">
         <script>
 
         </script>
     </form>
-    <!-- <script>
-        const fname = document.getElementById("fname").value
-        console.log(fname)
-        function checkValidity(){
-            alert('my alert')
-            const fname = document.getElementById('fname').value
-            console.log(fname)
-        }
-    </script> -->
-  
-    
-    <!-- <script src="js/checkout_form.js" type="module"></script> -->
+</div>
   
   </body>
 
