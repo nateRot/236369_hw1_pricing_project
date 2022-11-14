@@ -19,7 +19,7 @@ function checkValidity() {
     }
 
     const fname = document.getElementById('fname').value
-    var english = /^[A-Za-z]*$/
+    var english = /^[A-Za-z\s]*$/
     if (!english.test(fname)) {
         error_message = error_message + 'name entered invalid\n'
     }

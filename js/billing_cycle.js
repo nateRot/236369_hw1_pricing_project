@@ -5,7 +5,7 @@ let value = params.get('plan_num')
 // console.log(value)
 
 const newHeader = document.getElementById('new-header')
-newHeader.innerHTML = 'You chose plan ' + (parseInt(value, 10) + 1)
+newHeader.innerHTML = 'You choose plan ' + (parseInt(value, 10) + 1)
 const centerBox = document.getElementById('my-box')
 
 const createMonthlycont = () => {
