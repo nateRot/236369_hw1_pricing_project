@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+
 <div class="stage">
   Step 2
 </div>
@@ -18,27 +19,21 @@
 
 <body>
   <!-- Header Content -->
-  <header> TeamTaub Gaming Plans </header>
-  <p id="new-header" style="font-size: 10px;"> You choose </p>
+  <h1 class="header"> TeamTaub Gaming Plans </h1>
+  <p id="new-header" style="font-size: 30px;"></p>
+  Now select the payment cycle
   <!-- Main Content -->
-  <main>
-     <button id="morty"> please, me!</button>
-  </main>
-  
-  <a href = "http://www.nissan.com">nissan.com</a>
-  
-  <div id="my-box">
-    CSS is not fun :(
-  </div>
-  
-  <div id="container">
-    <a class="btn-mktg"> 🎮 </a>
-    <div> 🏋🏽 </div>
-    <div> 🤴🏼 </div>
+  <div class="cycle-box" style="display: flex">
+    <div>
+      <button type="button" id="monthly-button"></button>
+    </div>
+    <div>
+      <button type="button" id="yearly-button"></button>
+      <p style="text-align: center">Best Value!</p>
+    </div>
   </div>
 
+  <script src="js/billing_cycle.js" type="module"></script>
 
-
-  <script src="js/scripts.js"></script>
 </body>
 </html>
